@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Reproductor de video</title>
+	<link rel="stylesheet" href="css/reproductor.css">
+	<script type="text/javascript" src="js/reproductor.js"></script>
+</head>
+
+<body>
+	<section id="reproductor">
+		<video id="media" width="400" height="225">
+			<source src="video/lego.mp4">
+			<source src="video/lego.ogv">
+		</video>
+		<nav>
+			<div id="botones">
+				<input type="button" id="play" value="Play">
+				<input type="button" id="mute" value="Mute">
+			</div>
+			<div id="barra">
+					<div id="progreso"></div>
+			</div>
+			<div id="control">
+				<input type="range" id="volume" min="0" max="1" step="0.1" value="0.6">
+			</div>
+			<div class="clear"></div>
+		</nav>
+	</section>
+</body>
+</html>
